@@ -1,4 +1,4 @@
-kkkkkkkkkKKKKKKKKKKKKKKKKKKKKKKKKKK'package main
+package main
 
 import (
 	"bytes"
