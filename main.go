@@ -236,7 +236,6 @@ func main() {
 		b.Handle("/clima", replyForecast)
 		b.Handle("/forecast", replyForecast)
 		b.Handle("/previsao", replyForecast)
-		b.Handle(tb.OnText, replyForecast)
 
 		b.Start()
 	}
@@ -252,7 +251,7 @@ func replyForecast(m *tb.Message) {
 	if err != nil {
 		b.Send(m.Chat, fmt.Sprintf("Erro ao obter previsão: %s", err))
 		return
-	}
+	}tb "gopkg.in/tucnak/telebot.v2
 
 	b.Send(m.Chat, forecastString(forecast), &tb.SendOptions{
 		ParseMode: tb.ModeMarkdown,
