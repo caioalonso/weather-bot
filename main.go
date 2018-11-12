@@ -236,7 +236,6 @@ func main() {
 		b.Handle("/clima", replyForecast)
 		b.Handle("/forecast", replyForecast)
 		b.Handle("/previsao", replyForecast)
-		b.Handle(tb.OnText, replyForecast)
 
 		b.Start()
 	}
